@@ -39,7 +39,7 @@
                         <a class="nav-link" aria-current="page" href="./about.html"> AboutUs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./delete-success.html"> Delete User</a>
+                        <a class="nav-link active" aria-current="page" href="./delete-success.html"> Delete User</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./contact.html"> ContactUs</a>
@@ -50,13 +50,22 @@
     </nav>
     <main>
         <div class="container py-4">
-            <div class="p-5 mb-4 bg-light rounded-3">
-                <div class="container-fluid py-5">
-                    <p class="col-md-12 fs-4">If you have any support related query please contact on
-                        <b><i>support@bookmygame.app</i></b>
-                    </p>
+            <form action="/delete-success" method="get">
+                <!-- Form with one field and message which take phone number of India as input and delete the account -->
+                <h2>
+                    <center>Enter your phone number to delete your account</center>
+                </h2>
+                <div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone"
+                            placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-            </div>
+            </form>
+        </div>
 
 
     </main>
